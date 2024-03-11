@@ -31,10 +31,16 @@ package home_made_01;
 public class Main {
     public static void main(String[] args) {
         Regtangle rectangle = new Regtangle(4, 5);
-        System.out.println(rectangle.calculateArea(rectangle.getLength(),rectangle.getWidth()));
+        System.out.println("Прамоуголник : " + rectangle.getLength() + "x" + rectangle.getWidth());
+        System.out.println("Площадь прямоугольника = " + rectangle.calculateArea(rectangle.getLength(),rectangle.getWidth()));
+        System.out.println("Периметр прямоугольника = " + rectangle.calculatePerimeter(rectangle.getLength(),rectangle.getWidth()));
         Circle circle = new Circle(5);
-        System.out.println(circle.calculateArea(circle.getRadius()));
+        System.out.println("Круг, радиус = " + circle.getRadius());
+        System.out.println("Площадь круга = " + circle.calculateArea(circle.getRadius()));
+        System.out.println("Периметр круга = " + circle.calculatePerimeter(circle.getRadius()));
         Square square = new Square(10);
-        System.out.println(square.calculateArea(square.getSide(), square.getSide()));
+        System.out.println("Квадрат сторона: " + square.getSide());
+        System.out.println("Площадь квадрата = " + square.calculateArea(square.getSide(), square.getSide()));
+        System.out.println("Периметр квадрата = " + square.calculatePerimeter(square.getSide(), square.getSide()));
     }
 }

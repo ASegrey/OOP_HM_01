@@ -6,7 +6,10 @@ public class Regtangle extends Figure{
     }
 
     // Площадь прямоугольника S = a ∙ b. S – площадь a – длина b – ширина.
-    public double calculateArea(int length, int width){
+    public int calculateArea(int length, int width){
         return length*width;
+    }
+    public int calculatePerimeter(int length, int width){
+        return (length+width)*2;
     }
 }

@@ -6,9 +6,13 @@ public class Square extends Regtangle{
     }
     @Override
     // Площадь квадрата.
-    public double calculateArea(int side, int width){
+    public int calculateArea(int side, int width){
         return side*side;
     }
+    @Override 
+    public int calculatePerimeter(int side, int width){
+        return side*4;
+    }  
     public int getSide(){
         return getLength();
     }
